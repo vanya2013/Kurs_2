@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB88E4292752992600E4BA38 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88E4282752992600E4BA38 /* MainViewController.swift */; };
+		EB88E42B2754289300E4BA38 /* SetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88E42A2754289300E4BA38 /* SetingViewController.swift */; };
 		EB8DD17B274EC98500EC210F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8DD17A274EC98500EC210F /* AppDelegate.swift */; };
 		EB8DD17D274EC98500EC210F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8DD17C274EC98500EC210F /* SceneDelegate.swift */; };
 		EB8DD17F274EC98500EC210F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8DD17E274EC98500EC210F /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB88E4282752992600E4BA38 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EB88E42A2754289300E4BA38 /* SetingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetingViewController.swift; sourceTree = "<group>"; };
 		EB8DD177274EC98500EC210F /* Kurs_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kurs_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8DD17A274EC98500EC210F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB8DD17C274EC98500EC210F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				EB8DD17C274EC98500EC210F /* SceneDelegate.swift */,
 				EB8DD17E274EC98500EC210F /* ViewController.swift */,
 				EB8DD180274EC98500EC210F /* Main.storyboard */,
+				EB88E42A2754289300E4BA38 /* SetingViewController.swift */,
+				EB88E4282752992600E4BA38 /* MainViewController.swift */,
 				EB8DD183274EC98700EC210F /* Assets.xcassets */,
 				EB8DD185274EC98700EC210F /* LaunchScreen.storyboard */,
 				EB8DD188274EC98700EC210F /* Info.plist */,
@@ -143,8 +149,10 @@
 			files = (
 				EB8DD18F274ECE0A00EC210F /* LoginFormViewController.swift in Sources */,
 				EB8DD17F274EC98500EC210F /* ViewController.swift in Sources */,
+				EB88E42B2754289300E4BA38 /* SetingViewController.swift in Sources */,
 				EB8DD17B274EC98500EC210F /* AppDelegate.swift in Sources */,
 				EB8DD17D274EC98500EC210F /* SceneDelegate.swift in Sources */,
+				EB88E4292752992600E4BA38 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

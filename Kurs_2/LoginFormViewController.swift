@@ -34,9 +34,6 @@ class LoginFormViewController: UIViewController {
     }
     
     @objc func keyboardDidHide(_ notification: Notification) {
-        let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue
-        guard let keyboardHeight = keyboardSize?.height else { return }
-        
         let contentInsets = UIEdgeInsets.zero
         scrollView.contentInset = contentInsets
         scrollView.scrollIndicatorInsets = contentInsets
