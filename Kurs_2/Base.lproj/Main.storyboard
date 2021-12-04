@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6P-xN-3b1">
-                                <rect key="frame" x="0.0" y="56" width="414" height="757"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="byK-Zc-dtP">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="526"/>
@@ -126,7 +126,7 @@
                         <outlet property="loginTextField" destination="JN2-mN-Zls" id="Q04-od-beV"/>
                         <outlet property="passwordTextField" destination="2U8-ym-4Pm" id="Guq-4o-k2Z"/>
                         <outlet property="scrollView" destination="C6P-xN-3b1" id="8kp-lb-bA5"/>
-                        <segue destination="ef9-uv-R4G" kind="show" identifier="fromLoginFormToNextView" id="NyL-Bb-F8Y"/>
+                        <segue destination="ef9-uv-R4G" kind="presentation" identifier="fromLoginFormToNextView" modalPresentationStyle="fullScreen" id="NyL-Bb-F8Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -138,7 +138,7 @@
             <objects>
                 <viewController id="mVB-ol-m4b" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cwu-eD-8Aq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="7WD-Ys-0AT"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -149,32 +149,47 @@
             </objects>
             <point key="canvasLocation" x="1476.8115942028987" y="734.59821428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Friends View Controller-->
         <scene sceneID="kAL-7D-wTf">
             <objects>
-                <viewController id="x2A-yE-6V3" sceneMemberID="viewController">
+                <viewController id="x2A-yE-6V3" customClass="FriendsViewController" customModule="Kurs_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dNg-8x-Nr0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uEF-fp-VoN">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SE9-y8-Q2d"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uEF-fp-VoN" firstAttribute="leading" secondItem="SE9-y8-Q2d" secondAttribute="leading" id="4pd-f3-ifz"/>
+                            <constraint firstItem="uEF-fp-VoN" firstAttribute="top" secondItem="SE9-y8-Q2d" secondAttribute="top" id="6OF-Pj-IvG"/>
+                            <constraint firstItem="uEF-fp-VoN" firstAttribute="trailing" secondItem="SE9-y8-Q2d" secondAttribute="trailing" id="etj-pd-GOL"/>
+                            <constraint firstItem="uEF-fp-VoN" firstAttribute="bottom" secondItem="SE9-y8-Q2d" secondAttribute="bottom" id="gSg-iu-Mac"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1lV-q1-yHi"/>
+                    <connections>
+                        <outlet property="tableView" destination="uEF-fp-VoN" id="7he-ri-v2l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGS-nY-LyR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="567" y="1401"/>
+            <point key="canvasLocation" x="566.66666666666674" y="1400.8928571428571"/>
         </scene>
         <!--Seting View Controller-->
         <scene sceneID="hjV-cX-pp2">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="qfx-1r-GvI" customClass="SetingViewController" customModule="Kurs_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tIk-Gu-ouo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aJ-eE-U9z">
-                                <rect key="frame" x="100" y="156" width="214" height="31"/>
+                                <rect key="frame" x="100" y="188" width="214" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Log Out"/>
                                 <connections>
@@ -199,17 +214,32 @@
             </objects>
             <point key="canvasLocation" x="567" y="-1252"/>
         </scene>
-        <!--View Controller-->
+        <!--Groups View Controller-->
         <scene sceneID="mvm-Rd-SIe">
             <objects>
-                <viewController id="mkW-KU-v5t" sceneMemberID="viewController">
+                <viewController id="mkW-KU-v5t" customClass="GroupsViewController" customModule="Kurs_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wbr-vt-aHq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eAk-2g-XF5">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="r7e-SM-L0U"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="r7e-SM-L0U" firstAttribute="trailing" secondItem="eAk-2g-XF5" secondAttribute="trailing" id="JPZ-Qq-Vs6"/>
+                            <constraint firstItem="eAk-2g-XF5" firstAttribute="leading" secondItem="r7e-SM-L0U" secondAttribute="leading" id="UXW-KI-QCf"/>
+                            <constraint firstItem="r7e-SM-L0U" firstAttribute="bottom" secondItem="eAk-2g-XF5" secondAttribute="bottom" id="ZZx-cZ-TeL"/>
+                            <constraint firstItem="eAk-2g-XF5" firstAttribute="top" secondItem="r7e-SM-L0U" secondAttribute="top" id="yqF-CJ-B6u"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uCK-HF-2J8"/>
+                    <connections>
+                        <outlet property="tableView" destination="eAk-2g-XF5" id="Njv-Db-sFg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U7H-TC-mV0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -220,7 +250,7 @@
             <objects>
                 <viewController title="MainViewController" modalPresentationStyle="fullScreen" id="FgW-ds-bwy" customClass="MainViewController" customModule="Kurs_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5ua-xN-Rev">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="IyS-w8-fgG"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -234,7 +264,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="WMv-pE-Dfg">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="ef9-uv-R4G" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ef9-uv-R4G" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="v6s-DD-Z5U"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xlB-Pt-aFO">
@@ -272,7 +302,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BXR-7x-MV3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -284,14 +314,14 @@
             </objects>
             <point key="canvasLocation" x="566.66666666666674" y="72.991071428571431"/>
         </scene>
-        <!--Service-->
+        <!--Groups-->
         <scene sceneID="gB4-Oa-mJG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Oix-rC-6FG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Service" image="square.grid.2x2" catalog="system" id="EkM-76-gjE"/>
+                    <tabBarItem key="tabBarItem" title="Groups" image="square.grid.2x2" catalog="system" id="EkM-76-gjE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nmy-JM-e0z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -310,7 +340,7 @@
                     <tabBarItem key="tabBarItem" title="Setting" image="gearshape" catalog="system" id="5bF-xA-LnO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bAt-iw-zI1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -329,7 +359,7 @@
                     <tabBarItem key="tabBarItem" title="Message" image="message" catalog="system" id="F22-fZ-vbA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RlE-6t-sxr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -348,10 +378,13 @@
                     <tabBarItem key="tabBarItem" title="Friends" image="person.2" catalog="system" id="3bh-jZ-tJW"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jnS-wG-kqD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bif-lm-hiu">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="x2A-yE-6V3" kind="relationship" relationship="rootViewController" id="X5h-N6-d6I"/>
                     </connections>
