@@ -11,7 +11,7 @@ class GroupsViewController: UIViewController {
 
     let friendsAndGroupsTableViewCell = "Friends+GroupsTableViewCell"
     let groupCellReuseIdentifire = "groupCellReuseIdentifire"
-    let heightGroupsTableViewCell: CGFloat = 100
+    let heightGroupsTableViewCell: CGFloat = 75
     
     @IBOutlet weak var tableView: UITableView!
     var groupsArray = [Group]()

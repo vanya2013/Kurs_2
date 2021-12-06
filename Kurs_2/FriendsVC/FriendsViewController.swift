@@ -11,7 +11,7 @@ class FriendsViewController: UIViewController {
 
     let friendsAndGroupsTableViewCell = "Friends+GroupsTableViewCell"
     let friendCellReuseIdentifire = "fiendCellReuseIdentifire"
-    let heightFriendsTableViewCell: CGFloat = 100
+    let heightFriendsTableViewCell: CGFloat = 75
     
     @IBOutlet weak var tableView: UITableView!
     var friendsArray = [Friend]()
