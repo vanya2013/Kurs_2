@@ -21,8 +21,6 @@ class GroupsViewController: UIViewController {
 
         fillGroupsArray()
         configureTableView()
-
-
     }
     
 

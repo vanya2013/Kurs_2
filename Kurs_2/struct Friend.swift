@@ -11,5 +11,5 @@ struct Friend {
     var name: String
     var description: String
     var image: String?
-    
+    var galleryImagesArray: [String]?
 }

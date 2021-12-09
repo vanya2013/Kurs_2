@@ -53,4 +53,8 @@ class LoginFormViewController: UIViewController {
         
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
 }
